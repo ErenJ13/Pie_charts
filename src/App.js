@@ -2,7 +2,7 @@ import './App.css';
 import { Chart } from "react-google-charts";
 
 
-export const data = [
+const data = [
   ["Artist", "Views (billions)"],
   ["BTS", 25],
   ["Blackpink", 14],
@@ -11,11 +11,11 @@ export const data = [
   ["BIGBANG", 4],
 ];
 
-export const options = {
+const options = {
   title: "Most watched k-pop artists",
 };
 
-export function App() {
+function App() {
   return (
     <Chart
       chartType="PieChart"
